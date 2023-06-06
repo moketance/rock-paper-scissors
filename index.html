@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <script src="./js/script.js"></script>
-</head>
-<body>
-    
-</body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <span>rock 📌 paper 📌 scissors</span>
+    </header>
+
+    <main>
+      <section class="message">
+        <p class="mTitle">ROUND 1</p>
+
+        <div class="mDetail">
+          <p class="mDetail-title">You win!</p>
+          <p class="mDetail-description">Scissors is beaten by rock</p>
+        </div>
+      </section>
+
+      <section class="play-ground">
+        <div class="user-box">
+          <div class="score-box">
+            <p>Your Score</p>
+            <p>0</p>
+          </div>
+
+          <div class="selection-box">
+            <div class="selected">❓</div>
+
+            <div class="options">
+              <button class="btn">✊</button>
+              <button class="btn">✋</button>
+              <button class="btn">🖖</button>
+            </div>
+          </div>
+
+          <div class="user-footer">
+            <p>Take a pick</p>
+          </div>
+        </div>
+
+        <div class="computer-box">
+          <div class="score-box">
+            <p>Computer Score</p>
+            <p>0</p>
+          </div>
+
+          <div class="selection-box">
+            <div class="selected">❓</div>
+
+            <div class="options">
+              <button class="btn btn-not_allowed">✊</button>
+              <button class="btn btn-not_allowed">✋</button>
+              <button class="btn btn-not_allowed">🖖</button>
+            </div>
+          </div>
+
+          <div class="user-footer">
+            <p>Computer automatically makes a pick</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Copyright © 2023 Silidje Moket</footer>
+  </body>
 </html>

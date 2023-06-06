@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Vollkorn', serif;
+  font-weight: 400;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #ffc078;
+
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+
+header span {
+  font-family: 'Rakkas', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+header,
+footer {
+  padding: 16px 0;
+  text-align: center;
+}
+
+footer {
+  font-weight: 700;
+}
+
+main {
+  flex-grow: 1;
+  /* border: 1px solid; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* MESSAGE-BOX */
+.mDetail,
+.mTitle {
+  text-align: center;
+}
+
+.mTitle {
+  font-family: 'Rakkas', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.mDetail-title {
+  font-size: 18px;
+}
+
+/* PLAY_GROUND-BOX */
+.play-ground {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.user-box,
+.computer-box {
+  width: 480px;
+  /* max-height: 416px; */
+  border-radius: 15px;
+  background-color: #192444;
+  color: white;
+  /* border: 4px dashed red; */
+}
+
+.score-box {
+  font-family: 'Rakkas', cursive;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.selection-box {
+  width: 240px;
+  /* border: 1px solid; */
+  margin: 16px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.selected {
+  flex-grow: 1;
+  font-size: 120px;
+  height: 240px;
+  border-radius: 15px;
+  padding-top: 16px;
+  /* background-color: black; */
+  border: 4px dashed #1864ab;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 50px;
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 10px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.btn-not_allowed {
+  cursor: not-allowed;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-footer {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+/* AUTO */
+.marked {
+  border: 2px solid red;
+}
