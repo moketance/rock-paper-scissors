@@ -13,7 +13,7 @@ body {
   background-color: #ffc078;
 
   display: flex;
-  gap: 32px;
+  gap: 16px;
   flex-direction: column;
 }
 
@@ -63,6 +63,7 @@ main {
 /* PLAY_GROUND-BOX */
 .play-ground {
   flex-grow: 1;
+  flex-wrap: wrap;
 
   display: flex;
   justify-content: center;
@@ -136,4 +137,12 @@ main {
 /* AUTO */
 .marked {
   border: 2px solid red;
+}
+
+.btn-def {
+  padding: 8px 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
 }

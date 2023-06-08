@@ -18,6 +18,8 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -26,7 +28,7 @@
 
     <main>
       <section class="message">
-        <p class="mTitle">ROUND 1</p>
+        <p class="mTitle"></p>
 
         <div class="mDetail">
           <p class="mDetail-title">You win!</p>
@@ -38,16 +40,16 @@
         <div class="user-box">
           <div class="score-box">
             <p>Your Score</p>
-            <p>0</p>
+            <p class="score"></p>
           </div>
 
           <div class="selection-box">
-            <div class="selected">❓</div>
+            <div class="selected user-emoji">❓</div>
 
             <div class="options">
-              <button class="btn">✊</button>
-              <button class="btn">✋</button>
-              <button class="btn">🖖</button>
+              <button class="btn btn-user" data-opt="rock">✊</button>
+              <button class="btn btn-user" data-opt="paper">✋</button>
+              <button class="btn btn-user" data-opt="scissors">🖖</button>
             </div>
           </div>
 
@@ -59,11 +61,11 @@
         <div class="computer-box">
           <div class="score-box">
             <p>Computer Score</p>
-            <p>0</p>
+            <p class="score"></p>
           </div>
 
           <div class="selection-box">
-            <div class="selected">❓</div>
+            <div class="selected computer-emoji">❓</div>
 
             <div class="options">
               <button class="btn btn-not_allowed">✊</button>
